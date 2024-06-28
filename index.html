@@ -3,26 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Cats & Dogs</title>
+    <!--cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- css -->
+     <link rel="stylesheet" href="userSearch.css">
+    <title>Search User's Github</title>
 </head>
 <body>
+    
     <div class="container">
-        <div class="buttons">
-            <button id="dog-btn">Click Me To Get Dog</button>
-            <button id="cat-btn">Click Me to Get a Cat</button>
+
+        <div class="search-button">
+            <input type="text" placeholder="Enter Github Username" id="username">
+            <button id="btn-submit">
+                <i class="fa-solid fa-paper-plane"></i>
+            </button>
         </div>
 
-        <div class="gal-container">
-            <div id="cat-side">
-x
+        <div class="profile-container">
+            <img src="blank-profile-picture-973460_1920.png" alt="" id="profile-pic">
+            <div class="name-bio">
+                <h2 id="name">User Name</h2>
+                <p id="bio">Bio</p>
             </div>
-            <div id="dog-side">
-x
-            </div>
+
         </div>
+
     </div>
-
-    <script src="cats.js"></script>
+    <script src="userSearch.js"></script>
 </body>
 </html>
